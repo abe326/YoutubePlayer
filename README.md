@@ -23,9 +23,7 @@ YouTube Playlist Manager は、React と Electron を使用して構築された
 4. **Electron対応**
    - クライアントアプリ化して、独立したデスクトップアプリケーションとして利用可能。
 
-## 必要な環境
+## 実行方法
 
-- Node.js v16.x 以上
-- npm または yarn
-- YouTube Data API キー（APIを使用する場合）
+win-unpacked.zip を 解答し、 youtube-player.exe を実行する事で起動。
 
