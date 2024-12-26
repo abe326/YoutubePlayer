@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Audio Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <div class="player-container">
+    <h1 class="title">YouTube Audio Player</h1>
+
+    <div class="input-container">
+      <input type="text" id="video-url" placeholder="YouTube動画のURLを入力">
+      <button id="load-video">読み込む</button>
+    </div>
+
+    <div class="controls">
+      <button id="play-button" disabled>▶</button>
+      <button id="pause-button" disabled>⏸</button>
+      <button id="stop-button" disabled>⏹</button>
+      <button id="repeat-button">🔁 リピートOFF</button>
+    </div>
+
+    <div class="slider-container">
+      <input type="range" id="progress-bar" min="0" max="100" step="0.1" value="0">
+      <div class="time-container">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <label for="volume-slider">音量</label>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+    </div>
+  </div>
+  <div id="player" style="display:none;"></div>
+  <script src="script.js"></script>
+</body>
+</html>
