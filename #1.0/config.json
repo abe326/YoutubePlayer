@@ -1,8 +1,0 @@
-{
-    "messages": {
-      "invalidUrl": "有効なYouTube動画URLを入力してください",
-      "loadSuccess": "動画を正常に読み込みました！",
-      "playError": "再生できません。動画を読み込んでください。"
-    }
-  }
-  
